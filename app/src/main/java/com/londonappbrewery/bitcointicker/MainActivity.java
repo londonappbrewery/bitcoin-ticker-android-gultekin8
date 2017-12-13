@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 String bitcoinPrice = "";
                 Log.d(TAG, "JSON: " + response.toString());
                 try {
-                    bitcoinPrice = response.getString("ask");
+                    bitcoinPrice = response.getString("last");
                     Toast.makeText(MainActivity.this, "JSON parse successful: " + bitcoinPrice, Toast.LENGTH_SHORT).show();
                 } catch (JSONException e) {
                     e.printStackTrace();
